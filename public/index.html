@@ -8,23 +8,42 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="musicplayer">
-        
+    <div id="player" style="background-color: #0ddb8c; height: 730px;">
+      <div id="musicplayer">
+      
+          </div>
+  <div id="dz-root"></div>
+  <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
+  <div class="rul" style="display: block; margin-top: 30px; margin-left: 90px;">
+  <label id="art" style="color: red; padding-right: 50px; font-size: 24px;">Исполнитель  </label>
+  <input type="text" id="artistPlayer">
+  <br>
+  <br>
+  <label id="track" style="color: red; padding-right: 120px; font-size: 24px;">Песня  </label>
+  <input type="text" id="trackPlayer">
+  <br>
+  <br>
+  
+  <button id="playBtn" style="background-color: aqua; margin-bottom: 20px;">Искать</button> </div> 
+  <input type="button" id="mainMenu" class="buttons" style="background-color: blueviolet; margin-left: 90px; font-size: 20px;" value="Добавить песню">  
+</div>
+  <br>
+  <div id="information" style="display: none; background-color: chartreuse; height: 200px; text-align: center; border-radius: 50px;">
+      <form>
+            
+      </form> <input type="button" id="enter" class="buttons" style="font-size: 30px; margin-top: 75px; background-color: hotpink; padding: 10px;" value="Войти">
     </div>
-<div id="dz-root"></div>
-<script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
-<div class="rul" style="display: block; margin-top: 30px; margin-left: 90px;">
-<label id="art" style="color: red; padding-right: 50px; font-size: 24px;">Исполнитель  </label>
-<input type="text" id="artistPlayer">
-<br>
-<br>
-<label id="track" style="color: red; padding-right: 120px; font-size: 24px;">Песня  </label>
-<input type="text" id="trackPlayer">
-<br>
-<br>
+    <br>
+    <div id="all_info" style="display: none; background-color: rgb(199, 104, 148); height: 220px;">
+     
+      <form>
+        
+      </form>
+    </div>
+    <br>
 
-<button id="playBtn" style="background-color: aqua;">Искать</button> </div> 
-<script src="../src/main.js"></script>
+  <script src="./script.js"></script>
+  
 
   </body>
 </html>
